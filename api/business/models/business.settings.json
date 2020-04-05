@@ -37,6 +37,12 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "mission_statement": {
+      "type": "text"
+    },
+    "additional_links": {
+      "type": "json"
     }
   }
 }
