@@ -5,7 +5,7 @@
   "description": "A Strapi App containing both the API and frontend Admin panel",
   "scripts": {
     "dev": "strapi develop",
-    "start": "strapi start",
+    "start": "node server.js",
     "build": "strapi build",
     "strapi": "strapi"
   },
@@ -13,13 +13,14 @@
   "dependencies": {
     "strapi": "3.0.0-beta.18.3",
     "strapi-admin": "3.0.0-beta.18.3",
-    "strapi-utils": "3.0.0-beta.18.3",
-    "strapi-plugin-content-type-builder": "3.0.0-beta.18.3",
+    "strapi-connector-mongoose": "3.0.0-beta.18.3",
     "strapi-plugin-content-manager": "3.0.0-beta.18.3",
-    "strapi-plugin-users-permissions": "3.0.0-beta.18.3",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.18.3",
+    "strapi-plugin-documentation": "3.0.0-beta.18.3",
     "strapi-plugin-email": "3.0.0-beta.18.3",
     "strapi-plugin-upload": "3.0.0-beta.18.3",
-    "strapi-connector-mongoose": "3.0.0-beta.18.3"
+    "strapi-plugin-users-permissions": "3.0.0-beta.18.3",
+    "strapi-utils": "3.0.0-beta.18.3"
   },
   "author": {
     "name": "Eric Furspan"
