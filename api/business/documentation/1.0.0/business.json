@@ -523,13 +523,10 @@
           "id": {
             "type": "string"
           },
-          "contact_email": {
-            "type": "string"
-          },
           "business_hours": {
             "type": "object"
           },
-          "social_media": {
+          "contact_links": {
             "type": "object"
           },
           "name": {
@@ -639,6 +636,9 @@
           },
           "additional_links": {
             "type": "object"
+          },
+          "events": {
+            "type": "object"
           }
         }
       },
@@ -647,13 +647,10 @@
           "name"
         ],
         "properties": {
-          "contact_email": {
-            "type": "string"
-          },
           "business_hours": {
             "type": "object"
           },
-          "social_media": {
+          "contact_links": {
             "type": "object"
           },
           "name": {
@@ -667,6 +664,9 @@
             "type": "string"
           },
           "additional_links": {
+            "type": "object"
+          },
+          "events": {
             "type": "object"
           }
         }

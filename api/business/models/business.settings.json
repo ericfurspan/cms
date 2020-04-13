@@ -9,13 +9,10 @@
     "timestamps": true
   },
   "attributes": {
-    "contact_email": {
-      "type": "email"
-    },
     "business_hours": {
       "type": "json"
     },
-    "social_media": {
+    "contact_links": {
       "type": "json"
     },
     "name": {
@@ -42,6 +39,9 @@
       "type": "text"
     },
     "additional_links": {
+      "type": "json"
+    },
+    "events": {
       "type": "json"
     }
   }

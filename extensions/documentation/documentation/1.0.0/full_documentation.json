@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/11/2020 1:43:14 PM"
+    "x-generation-date": "04/12/2020 7:00:38 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2722,13 +2722,10 @@
           "id": {
             "type": "string"
           },
-          "contact_email": {
-            "type": "string"
-          },
           "business_hours": {
             "type": "object"
           },
-          "social_media": {
+          "contact_links": {
             "type": "object"
           },
           "name": {
@@ -2838,6 +2835,9 @@
           },
           "additional_links": {
             "type": "object"
+          },
+          "events": {
+            "type": "object"
           }
         }
       },
@@ -2846,13 +2846,10 @@
           "name"
         ],
         "properties": {
-          "contact_email": {
-            "type": "string"
-          },
           "business_hours": {
             "type": "object"
           },
-          "social_media": {
+          "contact_links": {
             "type": "object"
           },
           "name": {
@@ -2866,6 +2863,9 @@
             "type": "string"
           },
           "additional_links": {
+            "type": "object"
+          },
+          "events": {
             "type": "object"
           }
         }
