@@ -11,6 +11,8 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@sentry/node": "5.15.4",
+    "dotenv": "^8.2.0",
     "strapi": "3.0.0-beta.18.3",
     "strapi-admin": "3.0.0-beta.18.3",
     "strapi-connector-mongoose": "3.0.0-beta.18.3",
