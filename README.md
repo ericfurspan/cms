@@ -1,9 +1,30 @@
-## Todos
-- Instagram auth provider: https://strapi.io/documentation/3.0.0-beta.x/plugins/users-permissions.html#providers
+<div align="center">
+    <img alt="by Eric Furspan" src="admin/src/assets/images/logo.svg" width="150px" />
+  <h1>CMS Admin</h1>
+  <p>A headless nodejs CMS admin panel, for managing static sites</i></p>
+</div>
+
+***********************************************
 
 ## Usage
-### Development
-1. `yarn dev`
+### Running the app in Development
+  Start the development server
+  ```
+  yarn dev
+  ```
+  Open the app in your browser
+  ```
+  http://localhost:1337/
+  ```
 
-### Production
-1. `todo:`
+***********************************************
+
+### Running the app in Production
+  Build the app
+  ```
+  yarn build
+  ```
+  Start the server
+  ```
+  yarn start
+  ```
