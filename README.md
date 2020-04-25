@@ -28,3 +28,15 @@
   ```
   yarn start
   ```
+
+***********************************************
+
+## Helpful Resources
+- [Strapi-Heroku CMS demo](https://github.com/strapi/strapi-heroku-cms-demo)
+- [Awesome Strapi](https://github.com/strapi/awesome-strapi)
+
+
+
+
+
+  
