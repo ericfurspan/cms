@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "description": "A Strapi App containing both the API and frontend Admin panel",
   "scripts": {
-    "dev": "NODE_ENV=development strapi develop",
     "start": "node server.js",
-    "build": "strapi build"
+    "build": "strapi build",
+    "dev": "NODE_ENV=development strapi develop"
   },
   "devDependencies": {},
   "dependencies": {
