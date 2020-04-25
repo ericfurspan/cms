@@ -8,7 +8,11 @@ const HomePage = ({ global: { plugins }, history: { push } }) => {
       <Container className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <Block>&lt; Work in Progress &gt;</Block>
+            <Block>
+              <p>&lt; Work in Progress &gt;</p>
+              <Separator style={{ marginTop: 37, marginBottom: 36 }} />
+              
+            </Block>
           </div>
         </div>
 

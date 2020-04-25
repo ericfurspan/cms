@@ -12,7 +12,7 @@ import {
   request,
 } from 'strapi-helper-plugin';
 import NavTopRightWrapper from '../../components/NavTopRightWrapper';
-import LogoStrapi from '../../assets/images/logo_strapi.png';
+import BrandLogo from '../../assets/images/logo-strapi.png';
 import PageTitle from '../../components/PageTitle';
 import LocaleToggle from '../LocaleToggle';
 import Wrapper from './Wrapper';
@@ -174,7 +174,7 @@ const AuthPage = ({
             {authType === 'register' ? (
               <FormattedMessage id="Auth.form.header.register" />
             ) : (
-              <img src={LogoStrapi} alt="strapi-logo" />
+              <img src={BrandLogo} alt="brand-logo" />
             )}
           </div>
           <div className="headerDescription">
@@ -254,7 +254,7 @@ const AuthPage = ({
           </div>
           {authType === 'register' && (
             <div className="logoContainer">
-              <img src={LogoStrapi} alt="strapi-logo" />
+              <img src={BrandLogo} alt="brand-logo" />
             </div>
           )}
         </div>

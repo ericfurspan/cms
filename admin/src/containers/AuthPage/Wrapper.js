@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   justify-content: space-around;
   text-align: center;
   padding: 6.2rem 0;
-  background: #fafafb;
+  background: #09182f;
   height: 100vh;
   -webkit-font-smoothing: antialiased;
 
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     }
     > img {
       margin-top: 1px;
-      height: 40px;
+      height: 72px;
     }
   }
   .headerDescription {
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
   .linkContainer {
     padding-top: 1.8rem;
     > a {
-      color: #262931;
+      color: #ffffff;
       font-size: 13px;
       &:hover,
       &:active,
