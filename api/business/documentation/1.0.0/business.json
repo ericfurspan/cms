@@ -553,22 +553,10 @@
               "name": {
                 "type": "string"
               },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
               "hash": {
+                "type": "string"
+              },
+              "sha256": {
                 "type": "string"
               },
               "ext": {
@@ -581,9 +569,6 @@
                 "type": "number"
               },
               "url": {
-                "type": "string"
-              },
-              "previewUrl": {
                 "type": "string"
               },
               "provider": {
@@ -616,22 +601,10 @@
                 "name": {
                   "type": "string"
                 },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
                 "hash": {
+                  "type": "string"
+                },
+                "sha256": {
                   "type": "string"
                 },
                 "ext": {
@@ -644,9 +617,6 @@
                   "type": "number"
                 },
                 "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
                   "type": "string"
                 },
                 "provider": {

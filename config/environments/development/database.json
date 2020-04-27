@@ -2,13 +2,17 @@
   "defaultConnection": "default",
   "connections": {
     "default": {
-      "connector": "mongoose",
+      "connector": "bookshelf",
       "settings": {
-        "uri": "${process.env.MONGODB_URI || ''}",
-        "database": "${process.env.DATABASE_NAME || 'strapi-db-dev'}"
+        "client": "postgres",
+        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
+        "port": "${process.env.DATABASE_PORT || 5432}",
+        "database": "${process.env.DATABASE_NAME || 'strapi-dev'}",
+        "username": "${process.env.DATABASE_USERNAME || 'postgres'}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
       "options": {
-        "ssl": true
+        "debug": true
       }
     }
   }
