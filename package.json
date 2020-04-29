@@ -6,10 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "build": "strapi build",
-    "dev": "NODE_ENV=development strapi develop"
-  },
-  "devDependencies": {
-    "knex": "^0.21.0"
+    "dev": "NODE_ENV=development strapi develop",
+    "archive": "git archive -v -o cms.zip --format=zip HEAD"
   },
   "dependencies": {
     "@sentry/node": "5.15.4",
@@ -25,7 +23,8 @@
     "strapi-plugin-upload": "^3.0.0-beta.20",
     "strapi-plugin-users-permissions": "^3.0.0-beta.20",
     "strapi-provider-upload-aws-s3": "^3.0.0-beta.20",
-    "strapi-utils": "^3.0.0-beta.20"
+    "strapi-utils": "^3.0.0-beta.20",
+    "knex": "^0.21.0"
   },
   "author": {
     "name": "Eric Furspan"
