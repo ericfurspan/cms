@@ -5,7 +5,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": true,
-    "path": "/cms"
+    "autoOpen": true
   }
 }

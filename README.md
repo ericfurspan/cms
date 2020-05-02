@@ -32,11 +32,12 @@
 ***********************************************
 
 ## Helpful Resources
+### AWS
+- [Configuring Beanstalk Environments](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/beanstalk-environment-configuration-advanced.html)
+- [Beanstalk Config Samples](https://github.com/awsdocs/elastic-beanstalk-samples/tree/master/configuration-files/aws-provided)
+
+### Strapi
 - [Strapi-Heroku CMS demo](https://github.com/strapi/strapi-heroku-cms-demo)
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi)
 
 
-
-
-
-  
