@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "description": "A Strapi App containing both the API and frontend Admin panel",
   "scripts": {
-    "start": "node server.js",
-    "build": "strapi build",
+    "start:prod": "NODE_ENV=production node server.js",
+    "build:prod": "NODE_ENV=production strapi build",
     "dev": "NODE_ENV=development strapi develop",
-    "archive": "git archive -v -o cms.zip --format=zip HEAD"
+    "deploy": "rm -rf build && npm run build:prod && eb deploy"
   },
   "dependencies": {
     "@sentry/node": "5.15.4",
