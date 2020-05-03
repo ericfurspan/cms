@@ -1,17 +1,18 @@
 {
-  "host": "${process.env.HOST || '0.0.0.0'}",
-  "port": "${process.env.PORT || 8081}",
+  "host": "localhost",
+  "port": "1337",
   "production": true,
+  "emitErrors": true,
   "proxy": {
     "enabled": true,
-    "port": 8081
+    "ssl": true,
+    "host": "localhost",
+    "port": "8081"
   },
   "cron": {
     "enabled": false
   },
   "admin": {
-    "autoOpen": false,
-    "host": "${process.env.HOST || '0.0.0.0'}",
-    "port": "${process.env.PORT || 8081}"
+    "autoOpen": false
   }
 }
