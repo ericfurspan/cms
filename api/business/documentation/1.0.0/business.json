@@ -536,53 +536,16 @@
           "description": {
             "type": "string"
           },
-          "logo": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              }
-            }
+          "mission_statement": {
+            "type": "string"
           },
-          "images": {
+          "additional_links": {
+            "type": "object"
+          },
+          "events": {
+            "type": "object"
+          },
+          "multimedia": {
             "type": "array",
             "items": {
               "required": [
@@ -601,10 +564,22 @@
                 "name": {
                   "type": "string"
                 },
-                "hash": {
+                "alternativeText": {
                   "type": "string"
                 },
-                "sha256": {
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
                   "type": "string"
                 },
                 "ext": {
@@ -619,6 +594,9 @@
                 "url": {
                   "type": "string"
                 },
+                "previewUrl": {
+                  "type": "string"
+                },
                 "provider": {
                   "type": "string"
                 },
@@ -630,15 +608,6 @@
                 }
               }
             }
-          },
-          "mission_statement": {
-            "type": "string"
-          },
-          "additional_links": {
-            "type": "object"
-          },
-          "events": {
-            "type": "object"
           }
         }
       },
