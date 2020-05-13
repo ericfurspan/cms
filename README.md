@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="by Eric Furspan" src="admin/src/assets/images/logo.svg" width="150px" />
+    <img alt="by Eric Furspan" src="static/img/logo.svg" width="150px" />
   <h1>CMS Admin</h1>
   <p>A headless nodejs CMS admin panel, for managing static sites</i></p>
 </div>
