@@ -545,7 +545,7 @@
           "events": {
             "type": "object"
           },
-          "multimedia": {
+          "gallery": {
             "type": "array",
             "items": {
               "required": [

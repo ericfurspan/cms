@@ -33,7 +33,7 @@
     "events": {
       "type": "json"
     },
-    "multimedia": {
+    "gallery": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
