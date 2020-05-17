@@ -43,6 +43,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "news": {
+      "type": "json"
     }
   }
 }

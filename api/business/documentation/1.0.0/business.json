@@ -608,6 +608,9 @@
                 }
               }
             }
+          },
+          "news": {
+            "type": "object"
           }
         }
       },
@@ -636,6 +639,9 @@
             "type": "object"
           },
           "events": {
+            "type": "object"
+          },
+          "news": {
             "type": "object"
           }
         }
