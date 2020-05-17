@@ -533,7 +533,7 @@
             "type": "string",
             "maxLength": 50
           },
-          "description": {
+          "caption": {
             "type": "string"
           },
           "mission_statement": {
@@ -626,7 +626,7 @@
             "type": "string",
             "maxLength": 50
           },
-          "description": {
+          "caption": {
             "type": "string"
           },
           "mission_statement": {
