@@ -1,4 +1,5 @@
-'use strict';
+"use strict";
+require("dotenv").config();
 
 /**
  * An asynchronous bootstrap function that runs before
@@ -7,10 +8,6 @@
  * This gives you an opportunity to set up your data model,
  * run jobs, or perform some special logic.
  *
- * See more details here: https://strapi.io/documentation/3.0.0-beta.x/configurations/configurations.html#bootstrap
+ * See more details here: https://strapi.io/documentation/3.0.0-beta.x/concepts/configurations.html#bootstrap
  */
-
-if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config({ path: '.env.development' });
-}
 module.exports = () => {};
