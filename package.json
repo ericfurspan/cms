@@ -6,7 +6,8 @@
   "scripts": {
     "build:prod": "NODE_ENV=production strapi build",
     "start:prod": "NODE_ENV=production node server.js",
-    "build:dev": "NODE_ENV=development strapi build",
+    "build": "strapi build",
+    "build:dev": "NODE_ENV=development strapi build --clean",
     "start:dev": "NODE_ENV=development strapi develop",
     "deploy": "rm -rf build && npm run build:prod && eb deploy"
   },
@@ -22,6 +23,7 @@
     "strapi-plugin-content-type-builder": "3.0.0-beta.20.1",
     "strapi-plugin-documentation": "3.0.0-beta.20.1",
     "strapi-plugin-email": "3.0.0-beta.20.1",
+    "strapi-plugin-graphql": "3.0.0-beta.20.1",
     "strapi-plugin-upload": "3.0.0-beta.20.1",
     "strapi-plugin-users-permissions": "3.0.0-beta.20.1",
     "strapi-provider-email-sendgrid": "3.0.0-beta.20.1",
