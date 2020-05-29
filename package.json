@@ -8,7 +8,7 @@
     "start": "strapi develop",
     "start:prod": "node server.js",
     "strapi": "strapi",
-    "deploy": "rm -rf build && npm run build:prod && eb deploy"
+    "deploy": "rm -rf build && yarn build && eb deploy"
   },
   "dependencies": {
     "@sentry/node": "5.15.4",
