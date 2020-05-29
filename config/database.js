@@ -11,7 +11,17 @@ module.exports = ({ env }) => ({
         database: env("DATABASE_NAME", 'strapi'),
         username: env("DATABASE_USERNAME", 'postgres'),
         password: env("DATABASE_PASSWORD", ''),
+        ssl: false,
       },
+      options: {
+        pool: {
+          min: 0,
+          max: 50,
+          idleTimeoutMillis: 30000,
+          createTimeoutMillis: 30000,
+          acquireTimeoutMillis: 30000
+        }
+      }
     }
   }
 });
