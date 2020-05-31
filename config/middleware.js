@@ -54,11 +54,6 @@ module.exports = ({ env }) => ({
       enabled: true,
       headers: [ 'Content-Type', 'Authorization', 'X-Frame-Options, bearerauth'],
       origin: env('CORS_ORIGINS', 'http://localhost:8080, http://localhost:1337')
-    },
-    ip: {
-      enabled: true,
-      whiteList: [ env('IP_WHITELIST', '127.0.0.1') ],
-      blackList: []
-    }    
+    }   
   },
 })
