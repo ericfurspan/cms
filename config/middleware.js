@@ -1,4 +1,6 @@
-module.exports = {
+// https://strapi.io/documentation/v3.x/concepts/middlewares.html
+
+module.exports = ({ env }) => ({
   timeout: 100,
   load: {
     before: ['responseTime', 'logger', 'cors', 'responses', 'gzip'],
@@ -12,20 +14,8 @@ module.exports = {
       path: './public',
       maxAge: 60000,
     },
-    session: {
-      enabled: true,
-      client: "cookie",
-      key: "strapi.sid",
-      prefix: "strapi:sess:",
-      secretKeys: ["mySecretKey1", "mySecretKey2"],
-      httpOnly: true,
-      maxAge: 86400000,
-      overwrite: true,
-      signed: false,
-      rolling: false
-    },
     logger: {
-      level: "info",
+      level: "debug",
       exposeInContext: true,
       requests: false
     },
@@ -61,36 +51,14 @@ module.exports = {
       mode: "block"
     },
     cors: {
-      enabled: true
+      enabled: true,
+      headers: [ 'Content-Type', 'Authorization', 'X-Frame-Options, bearerauth'],
+      origin: env('CORS_ORIGINS', 'http://localhost:8080, http://localhost:1337')
     },
     ip: {
-      enabled: false,
-      whiteList: [],
+      enabled: true,
+      whiteList: [ env('IP_WHITELIST', '127.0.0.1') ],
       blackList: []
     }    
   },
-}
-
-// const Sentry = require('@sentry/node');
-// require('dotenv').config();
-
-// const { SENTRY_DSN } = process.env;
-// Sentry.init({
-//   dsn: SENTRY_DSN,
-//   environment: strapi.config.environment,
-// });
-
-// module.exports = strapi => {
-//   return {
-//     initialize() {
-//       strapi.app.use(async (ctx, next) => {
-//         try {
-//           await next();
-//         } catch (error) {
-//           Sentry.captureException(error);
-//           throw error;
-//         }
-//       });
-//     },
-//   };
-// };
+})

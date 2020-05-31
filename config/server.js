@@ -1,3 +1,4 @@
+// https://strapi.io/documentation/v3.x/concepts/configurations.html#server
 
 module.exports = ({ env }) => ({
   host: 'localhost',

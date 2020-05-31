@@ -1,3 +1,4 @@
+// https://strapi.io/documentation/v3.x/concepts/configurations.html#database
 
 module.exports = ({ env }) => ({
   defaultConnection: "default",

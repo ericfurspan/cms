@@ -1,3 +1,4 @@
+// https://strapi.io/documentation/v3.x/concepts/hooks.html
 
 module.exports = {
   timeout: 3000,
