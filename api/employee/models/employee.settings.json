@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bio": {
+      "type": "text"
+    },
+    "businesses": {
+      "collection": "business",
+      "via": "employees"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

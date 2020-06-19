@@ -1244,6 +1244,62 @@
                 }
               }
             }
+          },
+          "businesses": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "business_hours": {
+                  "type": "object"
+                },
+                "contact_links": {
+                  "type": "object"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "mission_statement": {
+                  "type": "string"
+                },
+                "additional_links": {
+                  "type": "object"
+                },
+                "events": {
+                  "type": "object"
+                },
+                "gallery": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "news": {
+                  "type": "object"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "employees": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -1281,6 +1337,12 @@
           },
           "role": {
             "type": "string"
+          },
+          "businesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

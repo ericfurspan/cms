@@ -46,6 +46,16 @@
     },
     "news": {
       "type": "json"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "businesses"
+    },
+    "employees": {
+      "via": "businesses",
+      "collection": "employee",
+      "dominant": true
     }
   }
 }
