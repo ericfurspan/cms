@@ -16,8 +16,7 @@ module.exports = ({ env }) => ({
     },
     logger: {
       level: "debug",
-      exposeInContext: true,
-      requests: false
+      requests: true
     },
     parser: {
       enabled: true,
