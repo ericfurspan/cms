@@ -1,0 +1,21 @@
+{
+  "x-strapi-config": {
+    "path": "/documentation",
+    "showGeneratedFiles": true,
+    "generateDefaultResponse": true
+  },
+  "servers": [
+    {
+      "url": "http://localhost:1337",
+      "description": "Development server"
+    },
+    {
+      "url": "Unavailable",
+      "description": "No Staging server"
+    },
+    {
+      "url": "https://strapi.quanda.dev",
+      "description": "Production server"
+    }
+  ]
+}
