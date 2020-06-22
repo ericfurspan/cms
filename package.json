@@ -4,11 +4,12 @@
   "version": "0.1.2",
   "description": "A Strapi app containing both the API and super-admin panel",
   "scripts": {
+    "clean": "rm -r build .cache",
     "build": "strapi build",
-    "start": "strapi develop",
+    "start": "npm run clean && strapi develop",
     "start:prod": "node server.js",
     "strapi": "strapi",
-    "deploy": "rm -rf build && npm run build && eb deploy"
+    "deploy": "npm run clean && npm run build && eb deploy"
   },
   "dependencies": {
     "@sentry/node": "5.15.4",
