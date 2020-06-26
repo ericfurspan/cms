@@ -2,7 +2,7 @@
   "name": "cms-admin",
   "private": true,
   "version": "0.1.2",
-  "description": "A Strapi app containing both the API and super-admin panel",
+  "description": "A Strapi app containing both a Nodejs API and a React-powered Admin UI",
   "scripts": {
     "clean": "rm -r build .cache",
     "build": "strapi build",
