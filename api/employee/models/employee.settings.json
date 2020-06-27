@@ -25,8 +25,8 @@
       "type": "text"
     },
     "businesses": {
-      "collection": "business",
-      "via": "employees"
+      "via": "employees",
+      "collection": "business"
     },
     "title": {
       "type": "string"

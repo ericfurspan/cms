@@ -526,7 +526,7 @@
           "business_hours": {
             "type": "object"
           },
-          "contact_links": {
+          "social_media_links": {
             "type": "object"
           },
           "name": {
@@ -538,9 +538,6 @@
           },
           "mission_statement": {
             "type": "string"
-          },
-          "additional_links": {
-            "type": "object"
           },
           "events": {
             "type": "object"
@@ -687,6 +684,15 @@
                 }
               }
             }
+          },
+          "business_email": {
+            "type": "string"
+          },
+          "podcast_links": {
+            "type": "object"
+          },
+          "payment_links": {
+            "type": "object"
           }
         }
       },
@@ -698,7 +704,7 @@
           "business_hours": {
             "type": "object"
           },
-          "contact_links": {
+          "social_media_links": {
             "type": "object"
           },
           "name": {
@@ -710,9 +716,6 @@
           },
           "mission_statement": {
             "type": "string"
-          },
-          "additional_links": {
-            "type": "object"
           },
           "events": {
             "type": "object"
@@ -731,6 +734,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "business_email": {
+            "type": "string"
+          },
+          "podcast_links": {
+            "type": "object"
+          },
+          "payment_links": {
+            "type": "object"
           }
         }
       }

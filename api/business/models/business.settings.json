@@ -13,7 +13,7 @@
     "business_hours": {
       "type": "json"
     },
-    "contact_links": {
+    "social_media_links": {
       "type": "json"
     },
     "name": {
@@ -26,9 +26,6 @@
     },
     "mission_statement": {
       "type": "text"
-    },
-    "additional_links": {
-      "type": "json"
     },
     "events": {
       "type": "json"
@@ -53,9 +50,18 @@
       "via": "businesses"
     },
     "employees": {
-      "via": "businesses",
       "collection": "employee",
+      "via": "businesses",
       "dominant": true
+    },
+    "business_email": {
+      "type": "email"
+    },
+    "podcast_links": {
+      "type": "json"
+    },
+    "payment_links": {
+      "type": "json"
     }
   }
 }

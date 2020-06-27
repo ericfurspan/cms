@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/21/2020 8:35:19 PM"
+    "x-generation-date": "06/27/2020 3:46:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3237,7 +3237,7 @@
           "business_hours": {
             "type": "object"
           },
-          "contact_links": {
+          "social_media_links": {
             "type": "object"
           },
           "name": {
@@ -3249,9 +3249,6 @@
           },
           "mission_statement": {
             "type": "string"
-          },
-          "additional_links": {
-            "type": "object"
           },
           "events": {
             "type": "object"
@@ -3398,6 +3395,15 @@
                 }
               }
             }
+          },
+          "business_email": {
+            "type": "string"
+          },
+          "podcast_links": {
+            "type": "object"
+          },
+          "payment_links": {
+            "type": "object"
           }
         }
       },
@@ -3409,7 +3415,7 @@
           "business_hours": {
             "type": "object"
           },
-          "contact_links": {
+          "social_media_links": {
             "type": "object"
           },
           "name": {
@@ -3421,9 +3427,6 @@
           },
           "mission_statement": {
             "type": "string"
-          },
-          "additional_links": {
-            "type": "object"
           },
           "events": {
             "type": "object"
@@ -3442,6 +3445,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "business_email": {
+            "type": "string"
+          },
+          "podcast_links": {
+            "type": "object"
+          },
+          "payment_links": {
+            "type": "object"
           }
         }
       },
@@ -3534,7 +3546,7 @@
                 "business_hours": {
                   "type": "object"
                 },
-                "contact_links": {
+                "social_media_links": {
                   "type": "object"
                 },
                 "name": {
@@ -3545,9 +3557,6 @@
                 },
                 "mission_statement": {
                   "type": "string"
-                },
-                "additional_links": {
-                  "type": "object"
                 },
                 "events": {
                   "type": "object"
@@ -3572,6 +3581,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "business_email": {
+                  "type": "string"
+                },
+                "podcast_links": {
+                  "type": "object"
+                },
+                "payment_links": {
+                  "type": "object"
                 }
               }
             }
@@ -3805,7 +3823,7 @@
                 "business_hours": {
                   "type": "object"
                 },
-                "contact_links": {
+                "social_media_links": {
                   "type": "object"
                 },
                 "name": {
@@ -3816,9 +3834,6 @@
                 },
                 "mission_statement": {
                   "type": "string"
-                },
-                "additional_links": {
-                  "type": "object"
                 },
                 "events": {
                   "type": "object"
@@ -3843,6 +3858,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "business_email": {
+                  "type": "string"
+                },
+                "podcast_links": {
+                  "type": "object"
+                },
+                "payment_links": {
+                  "type": "object"
                 }
               }
             }
