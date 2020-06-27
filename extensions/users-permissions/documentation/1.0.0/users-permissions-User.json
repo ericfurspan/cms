@@ -1303,6 +1303,9 @@
                 },
                 "payment_links": {
                   "type": "object"
+                },
+                "logo": {
+                  "type": "string"
                 }
               }
             }
