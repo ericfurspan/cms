@@ -1,0 +1,66 @@
+{
+  "collectionName": "components_json_hours",
+  "info": {
+    "name": "Hours",
+    "icon": "business-time"
+  },
+  "options": {},
+  "attributes": {
+    "monday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "tuesday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "wednesday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "thursday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "friday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "saturday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "sunday_start": {
+      "type": "string",
+      "default": ""
+    },
+    "monday_end": {
+      "type": "string",
+      "default": ""
+    },
+    "tuesday_end": {
+      "type": "string",
+      "default": ""
+    },
+    "wednesday_end": {
+      "type": "string",
+      "default": ""
+    },
+    "thursday_end": {
+      "type": "string",
+      "default": ""
+    },
+    "friday_end": {
+      "type": "string",
+      "default": ""
+    },
+    "saturday_end": {
+      "type": "string",
+      "default": ""
+    },
+    "sunday_end": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

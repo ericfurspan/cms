@@ -1256,19 +1256,13 @@
                 "id": {
                   "type": "string"
                 },
-                "business_hours": {
-                  "type": "object"
-                },
-                "social_media_links": {
-                  "type": "object"
-                },
                 "name": {
                   "type": "string"
                 },
                 "caption": {
                   "type": "string"
                 },
-                "mission_statement": {
+                "description": {
                   "type": "string"
                 },
                 "events": {
@@ -1295,16 +1289,19 @@
                     "type": "string"
                   }
                 },
-                "business_email": {
+                "email": {
                   "type": "string"
                 },
-                "podcast_links": {
-                  "type": "object"
-                },
-                "payment_links": {
-                  "type": "object"
-                },
                 "logo": {
+                  "type": "string"
+                },
+                "operating_hours": {
+                  "type": "component"
+                },
+                "web_links": {
+                  "type": "object"
+                },
+                "banner": {
                   "type": "string"
                 }
               }

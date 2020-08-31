@@ -1,7 +1,7 @@
 {
   "name": "cms-admin",
   "private": true,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Strapi app containing both a Nodejs API and a React-powered Admin UI",
   "scripts": {
     "clean": "rm -r build .cache",

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/27/2020 5:58:33 PM"
+    "x-generation-date": "08/30/2020 9:13:47 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3234,12 +3234,6 @@
           "id": {
             "type": "string"
           },
-          "business_hours": {
-            "type": "object"
-          },
-          "social_media_links": {
-            "type": "object"
-          },
           "name": {
             "type": "string",
             "maxLength": 50
@@ -3247,7 +3241,7 @@
           "caption": {
             "type": "string"
           },
-          "mission_statement": {
+          "description": {
             "type": "string"
           },
           "events": {
@@ -3396,14 +3390,8 @@
               }
             }
           },
-          "business_email": {
+          "email": {
             "type": "string"
-          },
-          "podcast_links": {
-            "type": "object"
-          },
-          "payment_links": {
-            "type": "object"
           },
           "logo": {
             "required": [
@@ -3465,6 +3453,90 @@
                 "type": "string"
               }
             }
+          },
+          "operating_hours": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "tuesday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "wednesday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "thursday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "friday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "saturday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "sunday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "monday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "tuesday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "wednesday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "thursday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "friday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "saturday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "sunday_end": {
+                "type": "string",
+                "default": ""
+              }
+            }
+          },
+          "web_links": {
+            "type": "object",
+            "default": {
+              "youtube": "",
+              "fundthefirst": "",
+              "facebook": "",
+              "instagram": "",
+              "twitter": "",
+              "paypal": "",
+              "anchorfm": "",
+              "spotify_podcast": "",
+              "apple_podcast": ""
+            }
+          },
+          "banner": {
+            "type": "string"
           }
         }
       },
@@ -3473,12 +3545,6 @@
           "name"
         ],
         "properties": {
-          "business_hours": {
-            "type": "object"
-          },
-          "social_media_links": {
-            "type": "object"
-          },
           "name": {
             "type": "string",
             "maxLength": 50
@@ -3486,7 +3552,7 @@
           "caption": {
             "type": "string"
           },
-          "mission_statement": {
+          "description": {
             "type": "string"
           },
           "events": {
@@ -3507,14 +3573,92 @@
               "type": "string"
             }
           },
-          "business_email": {
+          "email": {
             "type": "string"
           },
-          "podcast_links": {
-            "type": "object"
+          "operating_hours": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "tuesday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "wednesday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "thursday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "friday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "saturday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "sunday_start": {
+                "type": "string",
+                "default": ""
+              },
+              "monday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "tuesday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "wednesday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "thursday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "friday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "saturday_end": {
+                "type": "string",
+                "default": ""
+              },
+              "sunday_end": {
+                "type": "string",
+                "default": ""
+              }
+            }
           },
-          "payment_links": {
-            "type": "object"
+          "web_links": {
+            "type": "object",
+            "default": {
+              "youtube": "",
+              "fundthefirst": "",
+              "facebook": "",
+              "instagram": "",
+              "twitter": "",
+              "paypal": "",
+              "anchorfm": "",
+              "spotify_podcast": "",
+              "apple_podcast": ""
+            }
+          },
+          "banner": {
+            "type": "string"
           }
         }
       },
@@ -3604,19 +3748,13 @@
                 "id": {
                   "type": "string"
                 },
-                "business_hours": {
-                  "type": "object"
-                },
-                "social_media_links": {
-                  "type": "object"
-                },
                 "name": {
                   "type": "string"
                 },
                 "caption": {
                   "type": "string"
                 },
-                "mission_statement": {
+                "description": {
                   "type": "string"
                 },
                 "events": {
@@ -3643,16 +3781,19 @@
                     "type": "string"
                   }
                 },
-                "business_email": {
+                "email": {
                   "type": "string"
                 },
-                "podcast_links": {
-                  "type": "object"
-                },
-                "payment_links": {
-                  "type": "object"
-                },
                 "logo": {
+                  "type": "string"
+                },
+                "operating_hours": {
+                  "type": "component"
+                },
+                "web_links": {
+                  "type": "object"
+                },
+                "banner": {
                   "type": "string"
                 }
               }
@@ -3884,19 +4025,13 @@
                 "id": {
                   "type": "string"
                 },
-                "business_hours": {
-                  "type": "object"
-                },
-                "social_media_links": {
-                  "type": "object"
-                },
                 "name": {
                   "type": "string"
                 },
                 "caption": {
                   "type": "string"
                 },
-                "mission_statement": {
+                "description": {
                   "type": "string"
                 },
                 "events": {
@@ -3923,16 +4058,19 @@
                     "type": "string"
                   }
                 },
-                "business_email": {
+                "email": {
                   "type": "string"
                 },
-                "podcast_links": {
-                  "type": "object"
-                },
-                "payment_links": {
-                  "type": "object"
-                },
                 "logo": {
+                  "type": "string"
+                },
+                "operating_hours": {
+                  "type": "component"
+                },
+                "web_links": {
+                  "type": "object"
+                },
+                "banner": {
                   "type": "string"
                 }
               }

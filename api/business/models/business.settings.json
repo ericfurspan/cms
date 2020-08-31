@@ -10,12 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "business_hours": {
-      "type": "json"
-    },
-    "social_media_links": {
-      "type": "json"
-    },
     "name": {
       "type": "string",
       "required": true,
@@ -24,7 +18,7 @@
     "caption": {
       "type": "string"
     },
-    "mission_statement": {
+    "description": {
       "type": "text"
     },
     "events": {
@@ -34,8 +28,8 @@
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
@@ -54,14 +48,8 @@
       "via": "businesses",
       "dominant": true
     },
-    "business_email": {
+    "email": {
       "type": "email"
-    },
-    "podcast_links": {
-      "type": "json"
-    },
-    "payment_links": {
-      "type": "json"
     },
     "logo": {
       "model": "file",
@@ -71,6 +59,28 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "operating_hours": {
+      "type": "component",
+      "repeatable": false,
+      "component": "json.hours"
+    },
+    "web_links": {
+      "type": "json",
+      "default": {
+        "youtube": "",
+        "fundthefirst": "",
+        "facebook": "",
+        "instagram": "",
+        "twitter": "",
+        "paypal": "",
+        "anchorfm": "",
+        "spotify_podcast": "",
+        "apple_podcast": ""
+      }
+    },
+    "banner": {
+      "type": "string"
     }
   }
 }
