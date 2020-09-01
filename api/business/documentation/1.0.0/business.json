@@ -832,6 +832,9 @@
           },
           "promotions": {
             "type": "object"
+          },
+          "reviews": {
+            "type": "object"
           }
         }
       },
@@ -956,6 +959,9 @@
             "type": "string"
           },
           "promotions": {
+            "type": "object"
+          },
+          "reviews": {
             "type": "object"
           }
         }

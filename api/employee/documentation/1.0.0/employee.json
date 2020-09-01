@@ -650,6 +650,9 @@
                 },
                 "promotions": {
                   "type": "object"
+                },
+                "reviews": {
+                  "type": "object"
                 }
               }
             }
