@@ -81,6 +81,9 @@
     },
     "banner": {
       "type": "string"
+    },
+    "promotions": {
+      "type": "json"
     }
   }
 }

@@ -614,6 +614,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "picture": {
+                  "type": "string"
                 }
               }
             }

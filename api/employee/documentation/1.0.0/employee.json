@@ -647,6 +647,9 @@
                 },
                 "banner": {
                   "type": "string"
+                },
+                "promotions": {
+                  "type": "object"
                 }
               }
             }

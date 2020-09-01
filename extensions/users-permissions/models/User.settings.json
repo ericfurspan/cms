@@ -57,6 +57,15 @@
       "via": "users",
       "collection": "business",
       "dominant": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

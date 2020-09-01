@@ -644,6 +644,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "picture": {
+                  "type": "string"
                 }
               }
             }
@@ -826,6 +829,9 @@
           },
           "banner": {
             "type": "string"
+          },
+          "promotions": {
+            "type": "object"
           }
         }
       },
@@ -948,6 +954,9 @@
           },
           "banner": {
             "type": "string"
+          },
+          "promotions": {
+            "type": "object"
           }
         }
       }
