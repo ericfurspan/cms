@@ -6,6 +6,9 @@ module.exports = ({ env }) => ({
   url: env('PROXY_URL', ''),
   emitErrors: true,
   admin: {
-    autoOpen: false
+    autoOpen: false,
+    auth: {
+      secret: env('ADMIN_JWT_SECRET')
+    }
   },
 });
