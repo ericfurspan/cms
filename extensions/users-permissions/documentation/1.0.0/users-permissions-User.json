@@ -1373,6 +1373,53 @@
                 "type": "string"
               }
             }
+          },
+          "applications": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "deploy_hook_url": {
+                  "type": "string"
+                },
+                "live_url": {
+                  "type": "string"
+                },
+                "deploy_status_url": {
+                  "type": "string"
+                },
+                "short_info": {
+                  "type": "string"
+                },
+                "deploy_panel_url": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "app_type": {
+                  "type": "string"
+                },
+                "business": {
+                  "type": "string"
+                },
+                "built_with": {
+                  "type": "object"
+                }
+              }
+            }
           }
         }
       },
@@ -1412,6 +1459,12 @@
             "type": "string"
           },
           "businesses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "applications": {
             "type": "array",
             "items": {
               "type": "string"

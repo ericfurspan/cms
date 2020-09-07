@@ -66,6 +66,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "applications": {
+      "via": "users",
+      "collection": "application"
     }
   }
 }

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Application",
+  "info": {
+    "name": "Application"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "deploy_hook_url": {
+      "type": "string"
+    },
+    "live_url": {
+      "type": "string"
+    },
+    "deploy_status_url": {
+      "type": "string"
+    },
+    "short_info": {
+      "type": "string"
+    },
+    "deploy_panel_url": {
+      "type": "string"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "applications",
+      "dominant": true
+    },
+    "app_type": {
+      "type": "string"
+    },
+    "business": {
+      "model": "business"
+    },
+    "built_with": {
+      "type": "json"
+    }
+  }
+}
